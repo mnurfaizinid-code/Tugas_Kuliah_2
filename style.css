@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    background-color: #f0f2f5;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.card {
+    flex: 1;
+    min-width: 320px;
+    max-width: 420px;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #1e293b;
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 1.4rem;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #334155;
+    font-size: 0.95rem;
+}
+
+input[type="number"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus {
+    outline: none;
+    border-color: #B22222;
+}
+
+.btn-utama {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    background-color: #B22222;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-utama:hover {
+    background-color: #B22222;
+}
+
+#hasil:not(:empty) {
+    margin-top: 20px;
+    padding: 14px;
+    background-color: #f8fafc;
+    border-left: 4px solid #B22222;
+    border-radius: 6px;
+    color: #0f172a;
+    line-height: 1.6;
+}
+
+/* Styling Bagian Daftar Tugas */
+.input-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.input-row .btn-utama {
+    width: auto;
+    margin-top: 0;
+    padding: 10px 16px;
+    white-space: nowrap;
+}
+
+#daftar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#daftar li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    color: #0f172a;
+    word-break: break-word;
+}
+
+.selesai {
+    text-decoration: line-through;
+    color: #94a3b8 !important;
+}
+
+#daftar li button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+#daftar li button:hover {
+    opacity: 0.85;
+}
+
+#daftar li button:first-of-type {
+    margin-left: auto;
+    background-color: #16a34a;
+}
+
+#daftar li button:last-of-type {
+    background-color: #dc2626;
+}
