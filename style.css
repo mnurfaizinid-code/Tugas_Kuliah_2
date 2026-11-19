@@ -92,7 +92,6 @@ input[type="text"]:focus {
     line-height: 1.6;
 }
 
-/* Styling Bagian Daftar Tugas */
 .input-row {
     display: flex;
     gap: 8px;
